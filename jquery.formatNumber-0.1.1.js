@@ -1,5 +1,5 @@
 /*
- * jQuery formatNumber v0.1.0
+ * jQuery formatNumber v0.1.1
  * https://github.com/RaphaelDDL/jquery.formatNumber
  * 
  * Copyright (c) 2012 Raphael "DDL" Oliveira
@@ -37,7 +37,7 @@
         formatNumber: function(options){
             var defaults = {
 				cents: '.',
-            	thousands: ','
+            	decimal: ','
 				}
             
             var options =  $.extend(defaults, options);
@@ -59,7 +59,7 @@
 					//console.log(x2);
 					var rgx = /(\d+)(\d{3})/;
 					while (rgx.test(x1)) {
-					x1 = x1.replace(rgx, '$1' + o.thousands + '$2');
+					x1 = x1.replace(rgx, '$1' + o.decimal + '$2');
 					}
 					thiz.html(x1 + x2);
 				//}catch(e){

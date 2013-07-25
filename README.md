@@ -21,4 +21,4 @@ This will make `<span class="number">2932389423</span>` for e.g., be formatted i
 	  cents: ',',
 	  decimal: '.'
 	});
-
+	

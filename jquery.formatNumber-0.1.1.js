@@ -40,13 +40,11 @@
             	decimal: ','
 				}
             
-            var options =  $.extend(defaults, options);
+            var o =  $.extend(defaults, options);
  
             return this.each(function() {
 				/* ----Script Start---- */
-                var o = options;
-                var thiz = $(this);
-				
+                var thiz = $(this), values, x, x1, x2;
 				//try{
 					values = $.trim(thiz.html());
 					//console.log(values);
